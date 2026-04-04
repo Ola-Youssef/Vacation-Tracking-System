@@ -84,7 +84,12 @@ The proposed system automates this workflow to improve efficiency, reduce proces
 The Vacation Tracking System streamlines leave management by automating request submission, validation, and approval workflows while ensuring integration with existing organizational systems.
 
 ---
+
 ## 8. Source of the Example
-The Vacation Tracking System (VTS) is adapted from an example in *Object-Oriented Analysis and Design with Applications (3rd Edition)*, Chapter 12.
+
+The **Vacation Tracking System (VTS)** presented in this document is adapted from an example in
+*Object-Oriented Analysis and Design with Applications* (3rd Edition),
+specifically from Chapter 12.
+
 
 
