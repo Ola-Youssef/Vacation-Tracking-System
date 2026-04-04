@@ -34,7 +34,7 @@ The system aims to simplify the leave process, reduce manual effort, and improve
 
 ### 4.1 Organizational Constraints
 
-* The system must implement a flexible, rules-based approach for validating and verifying leave requests.
+* The system must be designed and implemented in accordance with organizational rules and policies governing leave requests.
 
 ### 4.2 System Implementation Constraints
 
