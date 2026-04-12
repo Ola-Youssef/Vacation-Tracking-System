@@ -1,95 +1,107 @@
 # Vacation Tracking System (VTS) - System Analysis
 
-## 1. Vision
+## 1. Project Overview
 
-The **Vacation Tracking System (VTS)** enables employees to efficiently manage their vacation time, sick leave, and personal time off without requiring deep knowledge of company or local leave policies.
-The system aims to simplify the leave process, reduce manual effort, and improve overall efficiency.
-
----
-
-## 2. Functional Requirements
-
-1. The system shall allow managers and HR personnel to validate employee vacation requests.
-2. The system shall retrieve and process employee request data.
-3. The system shall send email notifications to managers for approval.
-4. The system shall integrate with internal systems and HR legacy systems.
-5. The system shall maintain activity logs for all transactions.
-6. The system shall allow HR and system administrators to override system rules when necessary.
-7. The system shall allow managers to grant personal leave within system-defined limits.
-8. The system shall provide a web service interface for querying employee vacation summaries.
-9. The system shall retrieve employee data and updates from HR legacy systems.
+The Vacation Tracking System (VTS) is the first project in a 6-month Node.js mentorship program.  
+The goal of this phase is to analyze and design the system before implementation.
 
 ---
 
-## 3. Non-Functional Requirements
+## 2. Vision
 
-* **Usability** 
-* **Performance** 
-* **Readability** 
-* **Security** 
+The **Vacation Tracking System (VTS)** enables employees to manage their vacation time, sick leave, and personal time off in a simple and efficient way, without needing deep knowledge of company leave policies.
 
----
-
-## 4. Constraints
-
-### 4.1 Organizational Constraints
-
-* The system must be designed and implemented in accordance with organizational rules and policies governing leave requests.
-
-### 4.2 System Implementation Constraints
-
-* The system must use existing hardware and middleware.
-* The system must be integrated into the existing intranet portal.
-* The system must use the portal’s Single Sign-On (SSO) for authentication.
-* The system must integrate with HR legacy systems for retrieving and updating employee data.
-* The system must provide web service interfaces for other internal systems.
+The system aims to:
+- Simplify leave requests and approvals
+- Reduce manual HR operations
+- Improve workflow efficiency
+- Ensure proper integration with internal systems
 
 ---
 
-## 5. Domain Description
+## 3. Functional Requirements
 
-The current vacation approval process requires both manager approval and HR review, resulting in delays and increased operational costs.
-The proposed system automates this workflow to improve efficiency, reduce processing time, and optimize resource utilization.
+The system shall:
+
+- Allow employees to submit vacation, sick leave, and personal leave requests.
+- Enable managers and HR personnel to review and validate requests.
+- Send email notifications to managers for approval actions.
+- Integrate with internal HR and legacy systems to retrieve and update employee data.
+- Maintain logs for all system activities and transactions.
+- Allow administrators and HR staff to override system rules when necessary.
+- Allow managers to approve limited personal leave within defined policies.
+- Provide APIs or web services for querying employee leave summaries.
 
 ---
 
-## 6. System Actors
+## 4. Non-Functional Requirements
+
+The system must ensure:
+
+- **Usability:** Simple and intuitive interface for all users.
+- **Performance:** Fast processing of requests and responses.
+- **Security:** Protected access using authentication and role-based authorization.
+- **Maintainability:** Clean and structured system design for easy updates and scaling.
+
+---
+
+## 5. System Constraints
+
+### Organizational Constraints
+- The system must comply with company policies and HR rules regarding leave management.
+
+### Technical Constraints
+- Must use existing infrastructure and middleware.
+- Must integrate with the company intranet portal.
+- Must use Single Sign-On (SSO) for authentication.
+- Must integrate with legacy HR systems.
+- Must expose web services for internal system communication.
+
+---
+
+## 6. Domain Description
+
+The current leave approval process requires manual validation by both managers and HR, which leads to delays and increased operational effort.
+
+The proposed system automates this workflow by:
+- Digitizing leave requests
+- Streamlining approval processes
+- Reducing processing time
+- Improving operational efficiency
+
+---
+
+## 7. System Actors
 
 ### Employee
-
-* Primary user of the system.
-* Manages personal vacation, sick leave, and time-off requests.
+- Submits and manages personal leave requests.
 
 ### Manager
+- Reviews and approves/rejects employee leave requests.
+- Can grant limited personal or compensatory leave.
 
-* Has all employee capabilities.
-* Approves or rejects employee requests.
-* Grants personal or compensatory leave within defined limits.
+### HR Clerk
+- Maintains employee records.
+- Views, adds, and updates employee information.
+- Operates with role-based access control.
 
-### Clerk (HR Staff)
-
-* Maintains and updates employee records.
-* Has permissions to view, add, and modify employee data.
-* Uses role-based access with separate login credentials.
-
-### System Admin
-* Manages technical infrastructure (e.g., web server, database).
-* Handles system logs, including collection, monitoring, and archiving.
-* Ensures system availability, performance, and security.
+### System Administrator
+- Manages system infrastructure and configurations.
+- Monitors logs and system performance.
+- Ensures system availability, security, and reliability.
 
 ---
 
-## 7. Summary
+## 8. Summary
 
-The Vacation Tracking System streamlines leave management by automating request submission, validation, and approval workflows while ensuring integration with existing organizational systems.
+The Vacation Tracking System (VTS) is designed to automate and streamline employee leave management by integrating request handling, approval workflows, and HR systems into a unified platform.
 
 ---
 
-## 8. Source of the Example
+## 9. Reference
 
-The **Vacation Tracking System (VTS)** presented in this document is adapted from an example in
-*Object-Oriented Analysis and Design with Applications* (3rd Edition),
-specifically from Chapter 12.
+This system analysis is adapted from:
+*Object-Oriented Analysis and Design with Applications (3rd Edition), Chapter 12*
 
 
 
